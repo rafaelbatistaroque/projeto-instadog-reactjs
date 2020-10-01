@@ -8,6 +8,7 @@ body{
   --tipo_principal: Helvetica, Arial, sans-serif;
   --tipo_secundario: 'Spectral', Georgia;
   font-family: var(--tipo_principal);
+  padding-top: 4rem;
 }
 
 h1,h2,h3,h4,p{
@@ -30,6 +31,10 @@ button{
   font-size: 1rem;
   font-family: var(--tipo_principal);
   color: #333;
+}
+
+a{
+  text-decoration: none;
 }
 
 .container{
