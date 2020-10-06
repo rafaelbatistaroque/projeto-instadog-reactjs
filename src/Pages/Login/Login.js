@@ -4,9 +4,11 @@ import styles from "./Login.module.css";
 
 const Login = () => {
   return (
-    <div className={styles.login}>
-      <Outlet />
-    </div>
+    <section className={styles.login}>
+      <div className={styles.forms}>
+        <Outlet />
+      </div>
+    </section>
   );
 };
 
