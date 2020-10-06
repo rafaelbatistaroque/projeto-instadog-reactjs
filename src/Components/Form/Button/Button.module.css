@@ -1,0 +1,31 @@
+.botao{
+  font-size: 1rem;
+  font-family: var(--tipo-primario);
+  cursor: pointer;
+  border: none;
+  border-radius: .4rem;
+  background: #6a009e;
+  color: white;
+  min-width: 8rem;
+  padding: .8rem 1.2rem;
+  box-sizing: border-box;
+  transition: .2s;
+}
+
+.botao:hover{
+  outline: none;
+  box-shadow: 0 0 5px 2px #be94d3;
+}
+
+.botao:disabled{
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.botao:active{
+  background-color: #be94d3;
+}
+
+.botao:focus{
+  outline: none;
+}

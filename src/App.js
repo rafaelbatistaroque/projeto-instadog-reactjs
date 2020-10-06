@@ -1,17 +1,20 @@
 import React from "react";
-import "./Global/App.css";
-import Header from "./Global/Header/Header";
-import Footer from "./Global/Footer/Footer";
-import Rotas from "./Global/Rotas/Rotas";
+import "./App.css";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
+import Rotas from "./Routes/Rotas";
 import { BrowserRouter } from "react-router-dom";
+import { UsuarioPerfil } from "./Hooks/UsuarioContext";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
-        <Header />
-        <Rotas />
-        <Footer />
+        <UsuarioPerfil>
+          <Header />
+          <Rotas />
+          <Footer />
+        </UsuarioPerfil>
       </BrowserRouter>
     </div>
   );
