@@ -10,6 +10,7 @@ import styles from "./UsuarioNavegacao.module.css";
 const UsuarioNavegacao = () => {
   const { realizarLogout } = React.useContext(UsuarioPerfilContext);
   const [mobile, setMobile] = React.useState(false);
+
   return (
     <nav className={styles.usuarionavegacao}>
       <NavLink to="/conta" end activeClassName={styles.active}>

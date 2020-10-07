@@ -1,6 +1,5 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Outlet } from "react-router-dom";
-import { UsuarioPerfilContext } from "../../Hooks/UsuarioContext";
 import styles from "./Login.module.css";
 
 const Login = () => {
