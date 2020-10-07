@@ -1,0 +1,39 @@
+.usuarionavegacao{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 1rem;
+}
+
+.usuarionavegacao a,
+.usuarionavegacao button{
+  background: #eee;
+  border-radius: .2rem;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  transition: .1s;
+  cursor: pointer;
+}
+
+.usuarionavegacao a:hover,
+.usuarionavegacao a:focus,
+.usuarionavegacao button:hover,
+.usuarionavegacao button:hover{
+  outline: none;
+  border-color: #6a009e;
+  background: white;
+  box-shadow: 0 0 5px 2px #be94d3;
+}
+
+.usuarionavegacao a.active{
+  border-color: #6a009e;
+  background: white;
+  box-shadow: 0 0 5px 2px #be94d3;
+}
+
+.usuarionavegacao a.active svg > *{
+  fill:#6a009e;
+}
