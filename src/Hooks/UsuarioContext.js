@@ -17,7 +17,6 @@ export const UsuarioPerfil = ({ children }) => {
       if (login) return;
 
       setCarregando(true);
-
       let token = obterToken();
 
       if (token === null) {
@@ -36,11 +35,11 @@ export const UsuarioPerfil = ({ children }) => {
 
   async function obterUsuario(token) {
     const { url, options } = USER_GET(token);
-
+    
     const resposta = await realizarRequisicao(url, options);
     setData(resposta);
-    setLogin(true);
     setCarregando(false);
+    setLogin(true);
     navegar("/conta");
   }
 
@@ -101,11 +100,11 @@ export const UsuarioPerfil = ({ children }) => {
   }
 
   const realizarLogout = () => {
-    setErros([]);
-    setLogin(false);
-    setData(null);
-    setCarregando(false);
     removerToken("token");
+    setCarregando(false);
+    setErros([]);
+    setData(null);
+    setLogin(false);
     navegar("/login");
   };
 

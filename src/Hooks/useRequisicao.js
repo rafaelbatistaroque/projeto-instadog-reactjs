@@ -1,5 +1,4 @@
 import React from "react";
-import Erro from "../Components/Erro/Erro";
 import Validacao from "../Services/validacao";
 
 const useRequisicao = () => {
